@@ -1,0 +1,138 @@
+Task#1 :Write a program that takes two numbers as input and prints their sum.
+
+Program SumOfTwoNumbers:
+let first_num = "Enter a number.";
+let second_num = "Enter a number.";
+let total = first_num + second_num;
+print (total);
+END.
+
+Task#2 : Write a program that prints all even numbers from 1 to 100.
+
+Program PrintEven1to100:
+total = 0;
+let num = 0;
+While (num<=100);
+Do total = total + num;
+num = num + 2;
+ENDWHILE
+print(total);
+END.
+
+Task#3: Write a function that checks if a given year is a leap year or not.
+
+Program IsLeapYear:
+let year = "Enter the year number.";
+if (year%4===0){
+    THEN print "The entered year is a leap year";
+}
+else{
+    print "The entered year is NOT a leap year";
+}
+END.
+
+
+Task#4:Write a program that converts kilometers per hours to miles per hour. Hint: 1km = 0.621371
+
+Program KphToMph:
+let speed = "Enter your speed in kilometers per hour.";
+let speed_mph = speed * 0.621371;
+print(speed_mph);
+END.
+
+Task#5:Write a pseudocode to check whether a number is a buzz number or not.
+
+Program IsBuzzumber:
+let num = "Enter a number";
+function isEndSeven(num){
+    return num%10 == 7;
+}
+if ( num%7===0 OR isEndSeven(num)){
+    THEN print ("The given number is a Buzz number");
+}
+else{
+    print("The given number is NOT a Buzz number");
+}
+END.
+
+Task#6: Write a program that asks a user for number and prints the multiplication table of that number up to 10.
+
+Program PrintTable:
+let num = "Enter a number";
+for loop (i=1, i<=10, i++){
+    print(i * num);
+}
+END.
+
+Task#7: Write a program that computes the factorial of a number (n!).
+
+Prgram CalcFactorial:
+let num = "Enter a number";
+let factorial = 1;
+for loop (i=num, i>0, i--){
+    factorial = factorial*i;
+}
+print(factorial);
+END.
+
+Task#8: Write a function that checks whether a number is prime or not.
+
+Program IsPrime:
+
+let num = "Enter a number";
+let num_test = num - 1;
+let is_prime = true
+for i = 2 TO num - 1
+if num % i == 0 then
+        is_prime = false;
+        break;
+        ENDIF
+    NEXT i
+    if (is_prime){
+        print"The number is prime";
+    }
+    else{
+        print"The number is not prime";
+    }
+END.
+
+
+
+Task#9: Write a program to check whether the triangle is equilateral, isosceles or scalene triangle. 
+
+Program TriagnleStatus:
+
+let first_side = "Enter the value of first side of a triangle"
+let second_side = "Enter the value of second side of a triangle"
+let third_side = "Enter the value of third side of a triangle"
+
+if ( first_side == second_side == third_side){
+    print ("Triangle is equilateral triangle")
+}
+if ( first_side == second_side OR first_side == third_side OR  second_side == third_side){
+    print ("Triangle is isosceles triangle")
+}
+if ( first_side != second_side != third_side){
+    print ("Triangle is equilateral triangle")
+}
+
+Task#10: Print this pattern: (using multiple prints and then by loop)
+
+#a: Using multiple prints
+Program PrintPattern:
+print "*";
+print "**";
+print "***";
+print "****";
+print "*****";
+END.
+
+#b: Using loop
+Program PrintPatternUsingLoop:
+for (i=0, i<=5, i++){
+    for j=1 to i
+    print "*";
+    Next j;
+    print newline;
+}
+END.
